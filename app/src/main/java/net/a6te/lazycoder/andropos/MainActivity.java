@@ -84,18 +84,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         LocalBroadcastManager.getInstance(this).registerReceiver(messageReceiver
                 ,new IntentFilter("completationMessage"));
 
-        mobileAdsInitialize();
-
-    }
-
-    private void mobileAdsInitialize() {
-        MobileAds.initialize(this,
-                getResources().getString(R.string.app_add_id));
-
-        mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-
     }
 
     private void initializeAll() {

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="Android-POS.app" target="1.8" />
+      <module name="Android-POS.p25Demo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
