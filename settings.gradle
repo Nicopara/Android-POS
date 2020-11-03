@@ -1,2 +1,3 @@
+include ':hoinSdk-release'
+include ':hoinprinterlib-release'
 include ':app'
-include ':p25Demo'

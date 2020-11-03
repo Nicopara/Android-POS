@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Android-POS.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Android-POS.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/p25Demo/Android-POS.p25Demo.iml" filepath="$PROJECT_DIR$/.idea/modules/p25Demo/Android-POS.p25Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hoinSdk-release/Android-POS.hoinSdk-release.iml" filepath="$PROJECT_DIR$/.idea/modules/hoinSdk-release/Android-POS.hoinSdk-release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hoinprinterlib-release/Android-POS.hoinprinterlib-release.iml" filepath="$PROJECT_DIR$/.idea/modules/hoinprinterlib-release/Android-POS.hoinprinterlib-release.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/AndroidStudioProjects.Android-POS.iml" filepath="$PROJECT_DIR$/.idea/modules/AndroidStudioProjects.Android-POS.iml" />
     </modules>
   </component>

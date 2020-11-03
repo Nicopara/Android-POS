@@ -22,11 +22,6 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.Fragment;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
-
 import net.a6te.lazycoder.andropos.fragments.DueDetailsFragment;
 import net.a6te.lazycoder.andropos.fragments.DueFragment;
 import net.a6te.lazycoder.andropos.fragments.InvoiceFragment;
@@ -60,7 +55,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Fragment fragment;
     private FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

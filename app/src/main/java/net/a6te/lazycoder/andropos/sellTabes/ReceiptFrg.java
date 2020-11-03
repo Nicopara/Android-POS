@@ -36,8 +36,8 @@ import net.a6te.lazycoder.andropos.modelClass.ProductListModel;
 import net.a6te.lazycoder.andropos.modelClass.SellsDatabaseModel;
 import net.a6te.lazycoder.andropos.modelClass.SoldProductModel;
 import net.a6te.lazycoder.andropos.modelClass.UserDatabaseModel;
-import net.londatiga.android.bluebamboo.MainActivityPrinter;
-import net.londatiga.android.bluebamboo.PrintSellInfo;
+//import net.londatiga.android.bluebamboo.MainActivityPrinter;
+//import net.londatiga.android.bluebamboo.PrintSellInfo;
 
 import static net.a6te.lazycoder.andropos.database.Stock.TAG;
 
@@ -65,7 +65,7 @@ public class ReceiptFrg extends Fragment {
     private UserDatabaseModel seller;
     private SellsInfo sellsInfo;
     private Stock stock;
-    private PrintSellInfo printInfo;
+    //private PrintSellInfo printInfo;
     private Customer customerDatabase;
     private CustomerDue customerDue;
     private SoldProductInfo soldProductInfo;
@@ -84,7 +84,7 @@ public class ReceiptFrg extends Fragment {
         seller = new User(getActivity()).getUserDetails();//this user method will return userDatavaseModelClassObject
         sellsInfo = new SellsInfo(getActivity());
         stock = new Stock(getActivity());
-        printInfo = new PrintSellInfo();
+       // printInfo = new PrintSellInfo();
         customerDatabase = new Customer(getActivity());
         customerDue = new CustomerDue(getActivity());
         soldProductInfo = new SoldProductInfo(getActivity());
@@ -254,6 +254,7 @@ public class ReceiptFrg extends Fragment {
 //                private String depositTv;
 //                private String currentDueTv;
 //
+                /*
                 printInfo = new PrintSellInfo(
                         seller.getUserName(),
                         seller.getUserPhone(),
@@ -272,10 +273,10 @@ public class ReceiptFrg extends Fragment {
                         String.valueOf(totalBill),
                         String.valueOf(customerPayment),
                         String.valueOf(due));
-
-                Intent intent = new Intent(getActivity(),MainActivityPrinter.class);
-                intent.putExtra("printData",printInfo);
-                startActivity(intent);
+*/
+                //Intent intent = new Intent(getActivity(),MainActivityPrinter.class);
+                //intent.putExtra("printData",printInfo);
+                //startActivity(intent);
 
                 updateStock();//remove soled product form stock
                 updateCustomerInfo();//update customer due info
@@ -300,7 +301,7 @@ public class ReceiptFrg extends Fragment {
         seller = new User(getActivity()).getUserDetails();//this user method will return userDatavaseModelClassObject
         sellsInfo = new SellsInfo(getActivity());
         stock = new Stock(getActivity());
-        printInfo = new PrintSellInfo();
+        //printInfo = new PrintSellInfo();
 
         totalBill=0;
         discount=0;
@@ -337,7 +338,7 @@ public class ReceiptFrg extends Fragment {
 //    public static final String COL_SOLD_PRODUCT_TOTAL_PRICE = "total_price";
 //    public static final String COL_SOLD_PRODUCT_PENDING_STATUS = "pending_status";
 //
-
+/*
         for (ProductListModel product : products){
             soldProductInfo.storeSoldProductInfo(new SoldProductModel(
                     printInfo.getInvoiceTv(),
@@ -350,6 +351,7 @@ public class ReceiptFrg extends Fragment {
             ));
 
         }
+        */
     }
 
     private void updateDueList() {
@@ -363,6 +365,7 @@ public class ReceiptFrg extends Fragment {
 //        private String payDeposit;
 
         //update due info
+        /*
         boolean status = customerDue.storeSellsDetails(new CustomerDuelDatabaseModel(
                 selectedCustomer.getCustomerCode(),
                 printInfo.getTotalAmountTv(),
@@ -375,14 +378,18 @@ public class ReceiptFrg extends Fragment {
 
         if (status) Log.d(TAG, "updateDueList: --------------successful");
         else Log.d(TAG, "updateDueList: --------- failed to store due details");
+        */
     }
 
     private void updateCustomerInfo() {
 
         //customer info update
+        /*
         boolean status = customerDatabase.updateCustomerDueAmount(selectedCustomer.getCustomerCode(), String.valueOf(getInteger(selectedCustomer.getCustomerDueAmount())+getInteger(printInfo.getDueTv())));
         if (status) Log.d(TAG, "updateCustomerInfo: --------------new due status updated");
         else Log.d(TAG, "updateCustomerInfo:------------- failed to update new customer due status");
+        */
+
     }
 
     private void updateStock() {
